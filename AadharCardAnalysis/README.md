@@ -43,6 +43,8 @@ https://drive.google.com/file/d/0B6rxRECSt4WdVkMzOTE2ODVWcG8/view?usp=sharing
 2. Find top 3 private agencies generating the most number of Aadhar cards? 
 3. Find the number of residents providing email, mobile number? (Hint: consider non-zero values.) 
 4. Find top 3 districts where enrolment numbers are maximum? 
+
+## Solution
 * I’ve solved all the above KPI’s using Spark SQL and Spark dataset operations. Solution using Spark SQL is present in the folder named “Using Spark SQL” and solution using dataset is present in the folder named “Using Spark Dataset”. Both the folders are present in the solution folder.
 * For Spark Dataset, I’ve created the dataset using case class. The structure for the case class is as follows:
 ```scala
