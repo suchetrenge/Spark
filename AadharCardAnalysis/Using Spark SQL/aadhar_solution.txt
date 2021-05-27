@@ -17,11 +17,7 @@ spark.sql("select * from (select *,row_number() over (partition by _c2 order by 
 KPI-2
 
 1. 
-names - 
-spark.sql("select distinct _c1 from aadhar ").show(100)
-
-count - 
-spark.sql("select count( distinct _c1) from aadhar ").show()
+spark.sql("select _c1,count(*) from aadhar group by _c1").show(100)
 
 2. 
 states count-
