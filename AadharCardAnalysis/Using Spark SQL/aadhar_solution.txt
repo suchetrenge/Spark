@@ -55,10 +55,10 @@ spark.sql("select _c2, sum(_c9) from aadhar group by _c2 order by sum(_c9) desc 
 
 3. 
 MobileProvided - 
-spark.sql("select count(*) as MobileProvided from aadhar where _c11 > 0 ").show()
+spark.sql("select sum(*) as MobileProvided from aadhar where _c11 > 0 ").show()
 
 EmailProvided - 
-rk.sql("select count(*) as EmailProvided from aadhar where _c12 > 0 ").show()
+rk.sql("select sum(*) as EmailProvided from aadhar where _c12 > 0 ").show()
 
 4. Top 3 Dist by enrollement
 spark.sql("select _c4, sum (_c9 + _c10) as enrolment from aadhar group by _c4 order by sum(_c9 + _c10) desc limit 3").show()
